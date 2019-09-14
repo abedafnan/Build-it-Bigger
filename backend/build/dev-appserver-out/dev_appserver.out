@@ -1,0 +1,42 @@
+Sep 14, 2019 10:10:48 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\HP\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\HP\AndroidStudioProjects\BuildItBigger\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+2019-09-14 22:10:48.574:INFO::main: Logging initialized @578ms to org.eclipse.jetty.util.log.StdErrLog
+2019-09-14 22:10:48.630:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
+java.io.IOException: Failed to bind to localhost/127.0.0.1:8080
+	at org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:346)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:308)
+	at com.google.appengine.tools.development.jetty9.JettyContainerService.connectContainer(JettyContainerService.java:309)
+	at com.google.appengine.tools.development.AbstractContainerService.createConnection(AbstractContainerService.java:268)
+	at com.google.appengine.tools.development.AbstractInstanceHolder.createConnection(AbstractInstanceHolder.java:37)
+	at com.google.appengine.tools.development.AbstractModule.createConnection(AbstractModule.java:73)
+	at com.google.appengine.tools.development.Modules.createConnections(Modules.java:99)
+	at com.google.appengine.tools.development.DevAppServerImpl.doStart(DevAppServerImpl.java:245)
+	at com.google.appengine.tools.development.DevAppServerImpl.access$000(DevAppServerImpl.java:47)
+	at com.google.appengine.tools.development.DevAppServerImpl$1.run(DevAppServerImpl.java:223)
+	at com.google.appengine.tools.development.DevAppServerImpl$1.run(DevAppServerImpl.java:221)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.google.appengine.tools.development.DevAppServerImpl.start(DevAppServerImpl.java:221)
+	at com.google.appengine.tools.development.DevAppServerMain$StartAction.apply(DevAppServerMain.java:404)
+	at com.google.appengine.tools.util.Parser$ParseResult.applyArgs(Parser.java:45)
+	at com.google.appengine.tools.development.DevAppServerMain.run(DevAppServerMain.java:257)
+	at com.google.appengine.tools.development.DevAppServerMain.main(DevAppServerMain.java:248)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.biSep 14, 2019 10:10:55 PM com.google.appengine.tools.development.jetty9.JettyContainerService$ScannerListener fileChanged
+INFO: C:\Users\HP\AndroidStudioProjects\BuildItBigger\backend\build\exploded-backend\WEB-INF\appengine-web.xml updated, reloading the webapp!
+2019-09-14 22:10:55.656:INFO:oejsh.ContextHandler:Scanner-0: Stopped c.g.a.t.d.j.DevAppEngineWebAppContext@536f2a7e{/,file:///C:/Users/HP/AndroidStudioProjects/BuildItBigger/backend/build/exploded-backend/,UNAVAILABLE}{C:\Users\HP\AndroidStudioProjects\BuildItBigger\backend\build\exploded-backend}
+2019-09-14 22:10:55.679:INFO:oejs.AbstractConnector:Scanner-0: Stopped NetworkTrafficSelectChannelConnector@6f1fba17{HTTP/1.1,[http/1.1]}{localhost:8080}
+Sep 14, 2019 10:10:55 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\HP\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\HP\AndroidStudioProjects\BuildItBigger\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+Sep 14, 2019 10:10:55 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (C:\Users\HP\AndroidStudioProjects\BuildItBigger\backend) is not equal to your 
+web application root (C:\Users\HP\AndroidStudioProjects\BuildItBigger\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
+2019-09-14 22:10:55.773:INFO:oejs.Server:Scanner-0: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_152-release-1343-b01
+2019-09-14 22:10:55.994:INFO:oejsh.ContextHandler:Scanner-0: Started c.g.a.t.d.j.DevAppEngineWebAppContext@7f6ff68e{/,file:///C:/Users/HP/AndroidStudioProjects/BuildItBigger/backend/build/exploded-backend/,AVAILABLE}{C:\Users\HP\AndroidStudioProjects\BuildItBigger\backend\build\exploded-backend}
+2019-09-14 22:10:55.995:INFO:oejs.session:Scanner-0: DefaultSessionIdManager workerName=node0
+2019-09-14 22:10:55.995:INFO:oejs.session:Scanner-0: node0 Scavenging disabled
+2019-09-14 22:10:56.000:INFO:oejs.AbstractConnector:Scanner-0: Started NetworkTrafficSelectChannelConnector@6f1fba17{HTTP/1.1,[http/1.1]}{localhost:8080}
+2019-09-14 22:10:56.000:INFO:oejs.Server:Scanner-0: Started @6731107ms
