@@ -16,7 +16,7 @@ android {
 
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
-        minSdkVersion 16
+        minSdkVersion 18
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -50,4 +50,6 @@ dependencies {
 
     // Dependency to the java jokes library
     implementation project(":jokes_lib")
+    // Dependency to the android display jokes library
+    implementation project(":jokes_display_lib")
 }
